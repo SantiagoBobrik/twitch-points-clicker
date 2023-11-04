@@ -7,7 +7,7 @@ const render = () => {
     let data = result[DATA_KEY] || {};
 
     const sortedChannels = Object.keys(data)
-      .slice(0, 10)
+      .slice(0, 5)
       .map((channel) => channel)
       .sort((a, b) => data[b].points - data[a].points);
 
