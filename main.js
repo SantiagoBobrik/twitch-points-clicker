@@ -1,8 +1,8 @@
 const DATA_KEY = "channels";
 const findButton = () => {
-  const button = document.querySelector(
-    'button[aria-label="Reclamar bonificación"]'
-  );
+  const button = document
+    .querySelector(".claimable-bonus__icon")
+    ?.closest("button");
 
   if (button) {
     const channelName = getChannelName();
