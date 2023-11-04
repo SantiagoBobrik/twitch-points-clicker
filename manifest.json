@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Twitch Points Clicker",
+  "version": "1.0",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "permissions": ["storage"],
+  "host_permissions": ["*://*.twitch.tv/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.twitch.tv/*"],
+      "js": ["main.js"]
+    }
+  ]
+}
