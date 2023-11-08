@@ -31,14 +31,15 @@ const findButton = () => {
   }
 };
 
-// const getPoints = () => {
-//   const containerPoints = document.querySelector(
-//     '[data-test-selector="balance-string"]'
-//   );
-//   return containerPoints
-//     ? containerPoints.querySelector("span")?.textContent
-//     : null;
-// };
+// eslint-disable-next-line no-unused-vars
+const getsPoints = () => {
+  const containerPoints = document.querySelector(
+    '[data-test-selector="balance-string"]'
+  );
+  return containerPoints
+    ? containerPoints.querySelector("span")?.textContent
+    : null;
+};
 
 const getChannelName = () => {
   const channelName = document.querySelector("h1");
